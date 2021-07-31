@@ -158,7 +158,7 @@ class UI_MainWindow(object):
         self.top_bar_layout.addWidget(self.top_label_left)
         self.top_bar_layout.addItem(self.top_spacer)
         self.top_bar_layout.addWidget(self.top_label_right)
-        # ------------------------------------- FIM TOP BAR
+        # -------------------------------------FIM TOP BAR
         
         # ## APPLICATION PAGE
         self.pages = QStackedWidget()
