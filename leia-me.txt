@@ -2,3 +2,4 @@ https://www.youtube.com/watch?v=_qOnJ7-tJcM&list=PLfQ7GQSrl0_ung_Wt0PpgOICqA8k6d
 
 aula1: Introdução e instalação do PySide6: $ pip install PySide6 -> pypi.org/project/PySide6/
 aula2: Criação das estruturas de pastas e arquivos
+aula3: Qt Design 6. O aplicativo é instalado automaticamente ao instalar o PySide6, dentro da pasta Lib do ambiente python criado anteriormente pasta "site-packages", entre na pasta "PySide6" e crie uma pasta "bin" caso não exista. Procure pelo binário "uic.exe" e faça uma cópia para a pasta "bin". Crie um atalho do "designer.exe" para a área de trabalho e inicie a criação das páginas no modo designer. Após a criação das páginas clique no menu Form -> View Python Code ... e Salva dentro do projeto gui -> pages -> ui_pages.py.  
