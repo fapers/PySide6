@@ -1,0 +1,4 @@
+https://www.youtube.com/watch?v=_qOnJ7-tJcM&list=PLfQ7GQSrl0_ung_Wt0PpgOICqA8k6dr3i
+
+aula1: Introdução e instalação do PySide6: $ pip install PySide6 -> pypi.org/project/PySide6/
+aula2: Criação das estruturas de pastas e arquivos
