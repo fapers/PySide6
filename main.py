@@ -42,10 +42,49 @@ class MainWindow(QMainWindow):
         # Toggle button
         self.ui.toggle_button.clicked.connect(self.toggle_button)
         
+        # Btn home
+        self.ui.btn_1.clicked.connect(self.show_page_1)
+        
+        # Btn widgets
+        self.ui.btn_2.clicked.connect(self.show_page_2)
+        
+        # Btn settings
+        self.ui.settings_btn.clicked.connect(self.show_page_3)
+        
+        # Change text
+        self.ui.ui_pages.btn_change_text.clicked.connect(self.change_text)
+        
         # EXIBIR A APLICAÇÃO
         self.show()
         
-    def toggle_button(self):
+    def change_text(self):
+        text = self.ui.ui_pages.lineEdit.text()
+        new_text = "Olá, " + text
+        self.ui.ui_pages.label_text.setText(new_text)
+        
+    def reset_selection(self):
+        for btn in self.ui.left_menu.findChildren(QPushButton):
+            try:
+                btn.set_active(False)
+            except:
+                pass
+        
+    def show_page_1(self):
+        self.reset_selection()
+        self.ui.pages.setCurrentWidget(self.ui.ui_pages.page_1)
+        self.ui.btn_1.set_active(True)
+        
+    def show_page_2(self):
+        self.reset_selection()
+        self.ui.pages.setCurrentWidget(self.ui.ui_pages.page_2)
+        self.ui.btn_2.set_active(True)
+        
+    def show_page_3(self):
+        self.reset_selection()
+        self.ui.pages.setCurrentWidget(self.ui.ui_pages.page_3)
+        self.ui.settings_btn.set_active(True)
+        
+    def toggle_button(self):        
         # Get menu width
         menu_width = self.ui.left_menu.width()
         
